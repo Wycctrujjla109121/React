@@ -1,11 +1,11 @@
-.post{
+.send_post{
     display: flex;
     flex-direction: column;
 }
-.post__label{
+.send_post__label{
     font-size: 24px;
 }
-.post__textarea{
+.send_post__textarea{
     height: 100%;
     max-height: 50px;
     min-height: 50px;
@@ -27,15 +27,15 @@
 
     cursor: pointer;
 }
-.post__textarea:focus{
+.send_post__textarea:focus{
     outline: auto olivedrab;
 
     cursor: auto;
 }
-.post__textarea::placeholder{
+.send_post__textarea::placeholder{
     color: #fff;
 }
-.post__button{
+.send_post__button{
     margin-top: 20px;
   
     align-self: flex-end;
@@ -50,7 +50,15 @@
 
     transition: 0.5s;
 }
-.post__button:active{
+.send_post__button:active{
     border-radius: 50px;
     transform: scale(1.1);
+}
+
+.new__post{
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }

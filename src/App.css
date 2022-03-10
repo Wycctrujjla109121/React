@@ -16,11 +16,3 @@
   margin-top: 20px;
 
 }
-.current__profile{
-  grid-area: content;
-
-  display: flex;
-  flex-direction: column;
-
-  row-gap: 20px;
-}

@@ -1,11 +1,12 @@
 import './../profile/profile.css'
+import MyPost from './SendPosts/SendPosts.jsx'
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <div className='profile'>
             <img className='profile__bg__img' src='https://w-dog.ru/wallpapers/0/62/349856802100204/zolotoj-bereg-okean-avstraliya-oteli-more-gorod.jpg' />
             <div className='profile__info'>
-                <img className='profile__img' src='https://klike.net/uploads/posts/2018-05/medium/1525256972_15.jpg' />
+                <img className='profile__img' src={props.ava} />
                 <div className='profile__data'>
                     <h2 className='profile__name'>Dmitry K.</h2>
                     <p className='profile__text'>date of Birth: 2 january</p>
@@ -17,6 +18,9 @@ const Profile = () => {
                         </p>
                 </div>
             </div>
+
+            <MyPost/>
+
         </div>
     );
 }

@@ -1,11 +1,16 @@
 .profile{
+    grid-area: content;
+
     display: flex;
     flex-direction: column;
-    gap: 20px;
+
+    row-gap: 20px;
 }
 .profile__bg__img{
     width: 100%;
     height: 200px;
+
+    object-fit: cover;
 }
 .profile__info{
     display: flex;
@@ -20,6 +25,8 @@
     transition: 0.5s;
 
     cursor: pointer;
+
+    object-fit: cover;
 }
 .profile__img:hover{
     transform: scale(1.03);
