@@ -1,0 +1,87 @@
+.not__found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+.not__found__text{
+    font-size: 30px;
+    text-align: center;
+
+    position: relative;
+}
+
+
+.not__found__orbit{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 50%;
+
+    position: relative;
+
+    margin-top: 50px;
+}
+
+.not__found__orbit::after{
+    content: '';
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    top: 5px;
+    left: 5px;
+
+    border-radius: 50%;
+    background-color: red;
+
+    animation-name: rotateAfter;
+    animation-delay: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    transform-origin: 45px 45px;
+}
+
+
+@keyframes rotateAfter {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.not__found__orbit::before{
+    content: '';
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    bottom: 5px;
+    right: 5px;
+
+    border-radius: 50%;
+    background-color: blue;
+
+    animation-name: rotateBefore;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transform-origin: -25px -25px;
+}
+
+@keyframes rotateBefore {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

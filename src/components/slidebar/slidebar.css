@@ -16,4 +16,9 @@
 .slidebar__link{
     text-decoration: none;
     color: #fff;
+
+    transition: 0.5s;
+}
+.slidebar__link.active{
+    color: gold;
 }
