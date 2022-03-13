@@ -17,3 +17,6 @@
     text-decoration: none;
     color: #fff;
 }
+.slidebar__link.active{
+    color: gold
+}

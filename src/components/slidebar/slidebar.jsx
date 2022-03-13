@@ -1,22 +1,23 @@
 import '../slidebar/slidebar.css'
+import { NavLink } from 'react-router-dom'
 
 const Slidebar = () =>{
     return(
         <nav className='slidebar'>
         <div className='slidebar__item'>
-          <a href='#' className='slidebar__link'>Profile</a>
+          <NavLink to='/profile' className='slidebar__link'>Profile</NavLink>
         </div>
         <div className='slidebar__item'>
-          <a href='#' className='slidebar__link'>Message</a>
+          <NavLink to='/dialogs' className='slidebar__link'>Message</NavLink>
         </div>
         <div className='slidebar__item'>
-          <a href='#' className='slidebar__link'>News</a>
+          <NavLink to='/news' className='slidebar__link'>News</NavLink>
         </div>
         <div className='slidebar__item'>
-          <a href='#' className='slidebar__link'>Music</a>
+          <NavLink to='/music' className='slidebar__link'>Music</NavLink>
         </div>
         <div className='slidebar__item'>
-          <a href='#' className='slidebar__link'>Settings</a>
+          <NavLink to='/settings' className='slidebar__link'>Settings</NavLink>
         </div>
       </nav>
     );

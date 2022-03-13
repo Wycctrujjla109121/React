@@ -16,3 +16,7 @@
   margin-top: 20px;
 
 }
+.wrapper__content
+{
+  grid-area: content;
+}

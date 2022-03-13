@@ -1,6 +1,4 @@
 .profile{
-    grid-area: content;
-
     display: flex;
     flex-direction: column;
 
