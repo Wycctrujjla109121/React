@@ -1,6 +1,4 @@
 .profile{
-    grid-area: content;
-
     display: flex;
     flex-direction: column;
 
@@ -23,7 +21,6 @@
     height: 200px;
 
     transition: 0.5s;
-
     cursor: pointer;
 
     object-fit: cover;

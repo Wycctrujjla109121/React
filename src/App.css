@@ -9,10 +9,12 @@
 
 
   max-width: 1300px;
-  margin: 0 auto;
-
+  
   padding: 0px 30px;
-
+  
+  margin: 0 auto;
   margin-top: 20px;
-
+}
+.wrapper__content{
+  grid-area: content;
 }
