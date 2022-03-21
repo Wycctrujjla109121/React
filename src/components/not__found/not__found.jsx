@@ -1,5 +1,4 @@
 import './not__found.css'
-
 const NotFound = () => {
     return (
         <div className='not__found'>
