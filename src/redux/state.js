@@ -1,3 +1,5 @@
+import {rerenderEntierTree} from '../render'
+
 let state = {
     profilePage: {
         // Данные постов
@@ -23,4 +25,14 @@ let state = {
     }
 }
 
+export let addPost = (postMessage) =>{
+    let newPost= {
+        id: 5,
+        img: "https://sun9-28.userapi.com/impf/c824503/v824503099/1758cd/FuaPI1dPq0E.jpg?size=483x259&quality=96&sign=7676fe76512aebb93eda62d45d4e13f9&type=album",
+        message: postMessage
+    };
+
+    state.profilePage.postData.unshift(newPost);
+    rerenderEntierTree(state);
+}
 export default state

@@ -3,6 +3,7 @@ import Message from './dialogs__messages/message.jsx'
 import './dialogs.css'
 
 const Dialogs = (props) => {
+
     return (
         <div className="dialogs">
             <div className='dialogs__user'>
