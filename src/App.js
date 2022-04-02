@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 const App = (props) => {
+
   return (
     <BrowserRouter>
       <div className='wrapper'>
@@ -17,7 +18,10 @@ const App = (props) => {
 
         <div className='wrapper__content'>
           <Routes>
-            <Route path="/profile" element={<Profile state={props.state.profilePage} addPost ={props.addPost}/>} />
+            <Route path="/profile" element={<Profile state={props.state.profilePage}
+              addPost={props.addPost}
+              update={props.update} />} />
+
             <Route path="/dialogs" element={<Dialogs state={props.state.dialogsPage} />} />
             {/* <Route path="/news" element={<News />} /> */}
             {/* <Route path="/music" element={<Music />} /> */}

@@ -2,6 +2,8 @@
     display: flex;
     align-items: flex-start;
     gap: 30px;
+
+    height: 100%;
 }
 .posts__avatar{
     width: 54px;
@@ -17,4 +19,9 @@
     font-size: 20px;
 
     height: 100%;
+
+    width: 100%;
+    max-width: 900px;
+
+    word-wrap:break-word;
 }
