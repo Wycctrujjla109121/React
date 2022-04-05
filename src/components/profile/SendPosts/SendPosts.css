@@ -1,6 +1,8 @@
 .send_post{
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 100px;
 }
 .send_post__label{
     font-size: 24px;
