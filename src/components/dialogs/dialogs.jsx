@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+import './dialogs.css'
+
+const Dialogs = (props) => {
+    return(
+        <div className="dialog">
+            dialog
+=======
+>>>>>>> master
 import DialogsUserLink from './dialogs__user/user.jsx'
 import Message from './dialogs__messages/message.jsx'
 import './dialogs.css'
@@ -17,10 +28,20 @@ const Dialogs = (props) => {
                     <Message key={element.message} id={element.id} message={element.message} />
                 )}
             </div>
+<<<<<<< HEAD
+=======
+>>>>>>> origin
+>>>>>>> master
         </div>
     )
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+export default Dialogs
+=======
+>>>>>>> master
 export default Dialogs
 
 
@@ -34,3 +55,7 @@ export default Dialogs
 
 
 
+<<<<<<< HEAD
+=======
+>>>>>>> origin
+>>>>>>> master

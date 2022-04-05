@@ -1,4 +1,11 @@
 import './not__found.css'
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin
+>>>>>>> master
 const NotFound = () => {
     return (
         <div className='not__found'>

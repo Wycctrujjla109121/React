@@ -8,11 +8,30 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 const App = (props) => {
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin
+>>>>>>> master
   return (
     <BrowserRouter>
       <div className='wrapper'>
         <Header />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+        <Slidebar />
+
+        <div className='wrapper__content'>
+          <Routes>
+            <Route path="/profile" element={<Profile ava="https://sun9-2.userapi.com/impg/-j9worTvE5IfcH945LpaEKW82Y_j3ERaq4T4jQ/726Akmx5W4M.jpg?size=1620x2160&quality=96&sign=37dd87aa78ac07a7ef6dd911f36ebcbb&type=album" />} />
+            <Route path="/dialogs" element={<Dialogs />} />
+=======
+>>>>>>> master
 
         <Slidebar />
 
@@ -23,6 +42,10 @@ const App = (props) => {
               update={props.update} />} />
 
             <Route path="/dialogs" element={<Dialogs state={props.state.dialogsPage} />} />
+<<<<<<< HEAD
+=======
+>>>>>>> origin
+>>>>>>> master
             {/* <Route path="/news" element={<News />} /> */}
             {/* <Route path="/music" element={<Music />} /> */}
             <Route path="*" element={<NotFound />} />
