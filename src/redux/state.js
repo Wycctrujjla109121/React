@@ -1,4 +1,6 @@
-import { rerenderEntierTree } from '../render'
+let rerenderEntierTree = () => {
+    console.log('state changed')
+}
 let state = {
     profilePage: {
         // Данные постов
@@ -25,12 +27,12 @@ let state = {
     }
 }
 window.state = state;
-export let update = (updateText) => {
+export const update = (updateText) => {
     state.profilePage.newPostChange = updateText;
-    rerenderEntierTree(state);
+    rerenderEntierTree();
 }
 
-export let addPost = () => {
+export const addPost = () => {
     let newPost = {
         id: state.profilePage.postData.length + 1,
         img: "https://sun9-28.userapi.com/impf/c824503/v824503099/1758cd/FuaPI1dPq0E.jpg?size=483x259&quality=96&sign=7676fe76512aebb93eda62d45d4e13f9&type=album",
@@ -38,8 +40,11 @@ export let addPost = () => {
     };
     state.profilePage.postData.unshift(newPost);
     state.profilePage.newPostChange = '';
-    rerenderEntierTree(state);
+    rerenderEntierTree();
 }
 
+export const subscribe = (observer) => {
+    rerenderEntierTree = observer;
+}
 
 export default state
