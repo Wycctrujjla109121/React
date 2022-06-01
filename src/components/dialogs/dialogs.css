@@ -1,11 +1,16 @@
-.dialogs{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.dialogs {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-areas:
+        'user message'
+        'sendMessage sendMessage';
 
     height: 100%;
 }
-.dialogs__user{
+
+.dialogs__user {
     display: flex;
     flex-direction: column;
 
@@ -13,8 +18,54 @@
 
     width: 100%;
     max-width: 350px;
+
+    grid-area: user;
 }
-.dialogs__messages{
+
+.dialogs__messages {
     width: 100%;
     max-width: 500px;
+
+    grid-area: message;
+
+}
+
+.sendMessage{
+    display: flex;
+    align-items: flex-end;
+    grid-area: sendMessage;
+}
+.sendMessage__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+
+    width: 100%;
+}
+
+.textarea{
+    outline: none;
+    border: unset;
+
+    width: 100%;
+    max-height: 17px;
+
+    border: 1px solid black;
+    padding: 20px;
+
+    resize: none;
+
+    font-size: 14px;
+}
+
+.send{
+    padding: 8px 13px;
+
+    background-color: transparent;
+
+    border: unset;
+    border: 1px solid rgb(211, 145, 21);
+    
+    color: rgb(211, 145, 21);
 }
